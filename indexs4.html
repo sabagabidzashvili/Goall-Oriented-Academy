@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Report</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="date"], select {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .checkbox {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Performance Report</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Student</th>
+            <th colspan="3">Subjects</th>
+            <th rowspan="2">Attendance</th>
+            <th rowspan="2">Final Grade</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+            <th>History</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td><input type="text" value="A"></td>
+            <td><select><option>B</option><option>C</option></select></td>
+            <td class="checkbox"><input type="checkbox" checked> Pass</td>
+            <td>95%</td>
+            <td>Math: A<br>Science: B<br>History: Pass<br><b>Total: B+</b></td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td><input type="text" value="B"></td>
+            <td><select><option>C</option><option>B</option></select></td>
+            <td class="checkbox"><input type="checkbox"> Pass</td>
+            <td>85%</td>
+            <td>Math: B<br>Science: C<br>History: Pass<br><b>Total: B+</b></td>
+        </tr>
+        <tr>
+            <td>Sam Brown</td>
+            <td><input type="text" value="C"></td>
+            <td><select><option>B</option><option>C</option></select></td>
+            <td class="checkbox"><input type="checkbox" checked> Pass</td>
+            <td>75%</td>
+            <td>Math: C<br>Science: B<br>History: Pass<br><b>Total: B+</b></td>
+        </tr>
+    </table>
+    <p>Generated on: <input type="date"></p>
+</body>
+</html>
